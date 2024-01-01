@@ -1,0 +1,1 @@
+A WordPress Gutenberg block employs the redux Immer package for maintaining immutable states, enabling users to seamlessly generate dynamic multiple repeater fields within the WordPress editor. This functionality facilitates the storage of diverse content data efficiently.
