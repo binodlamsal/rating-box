@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "rating-box/rating-plugin",
+    "title": "Ratinng box",
+    "category": "widgets",
+    "icon": "smiley",
+    "description": "A rating box",
+    "supports": {
+        "html": false
+    },
+    "textdomain": "rating-plugin",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
+    "attributes": {
+        "services": {
+            "type": "array",
+            "source": "query",
+            "default": [],
+            "selector": "section .rating-box",
+            "query": {
+                "index": {
+                    "type": "number",
+                    "source": "attribute",
+                    "attribute": "data-index"
+                },
+                "rate": {
+                    "type": "number",
+                    "source": "text",
+                    "selector": ".service-rate"
+                },
+                "description": {
+                    "type": "string",
+                    "selector": ".service-description",
+                    "source": "text"
+                },
+                "title": {
+                    "type": "string",
+                    "source": "text",
+                    "selector": ".service-title"
+                },
+                "designation": {
+                    "type": "string",
+                    "selector": ".service-designation",
+                    "source": "text"
+                }
+            }
+        }
+    }
+}
